@@ -1,0 +1,238 @@
+2017-08-27 20:54:03.786 [main] INFO  c.r.virtualexperiment.VirtualexperimentApplication - Starting VirtualexperimentApplication on zhangdeheng with PID 18020 (started by zdh in D:\学习\springboot_framework\springboot_------\virtualexperiment)
+2017-08-27 20:54:03.786 [main] INFO  c.r.virtualexperiment.VirtualexperimentApplication - No active profile set, falling back to default profiles: default
+2017-08-27 20:54:03.833 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Sun Aug 27 20:54:03 CST 2017]; root of context hierarchy
+2017-08-27 20:54:04.239 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-08-27 20:54:05.903 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-08-27 20:54:05.910 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-08-27 20:54:05.910 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-08-27 20:54:06.035 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-08-27 20:54:06.035 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2202 ms
+2017-08-27 20:54:06.207 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-08-27 20:54:06.222 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-27 20:54:06.222 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-27 20:54:06.222 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-27 20:54:06.222 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-27 20:54:06.222 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-27 20:54:06.222 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2017-08-27 20:54:06.461 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-08-27 20:54:06.688 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-08-27 20:54:06.703 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-08-27 20:54:06.750 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-08-27 20:54:06.750 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-08-27 20:54:06.766 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-08-27 20:54:06.782 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-08-27 20:54:06.969 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-08-27 20:54:07.399 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-08-27 20:54:07.962 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Sun Aug 27 20:54:03 CST 2017]; root of context hierarchy
+2017-08-27 20:54:08.055 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.rainierSoft.virtualexperiment.controller.IndexController.index()
+2017-08-27 20:54:08.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.rainierSoft.virtualexperiment.controller.IndexController.login_view()
+2017-08-27 20:54:08.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.rainierSoft.virtualexperiment.controller.LoginController.login(com.rainierSoft.virtualexperiment.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2017-08-27 20:54:08.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/upload],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.rainierSoft.virtualexperiment.controller.UploadController.index()
+2017-08-27 20:54:08.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/uploads],methods=[POST],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.rainierSoft.virtualexperiment.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2017-08-27 20:54:08.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/upload],methods=[POST],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.rainierSoft.virtualexperiment.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2017-08-27 20:54:08.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.util.List<com.rainierSoft.virtualexperiment.entity.UserEntity> com.rainierSoft.virtualexperiment.controller.UserController.delete(java.lang.Long)
+2017-08-27 20:54:08.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.util.List<com.rainierSoft.virtualexperiment.entity.UserEntity> com.rainierSoft.virtualexperiment.controller.UserController.list()
+2017-08-27 20:54:08.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public com.rainierSoft.virtualexperiment.entity.UserEntity com.rainierSoft.virtualexperiment.controller.UserController.save(com.rainierSoft.virtualexperiment.entity.UserEntity)
+2017-08-27 20:54:08.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-27 20:54:08.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-27 20:54:08.095 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/virtualexperiment/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 20:54:08.095 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 20:54:08.095 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 20:54:08.126 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 20:54:08.358 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-08-27 20:54:08.483 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-08-27 20:54:08.483 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-08-27 20:54:08.483 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-08-27 20:54:08.498 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-08-27 20:54:08.514 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-08-27 20:54:08.530 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-08-27 20:54:08.545 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-08-27 20:54:08.545 [main] INFO  c.r.virtualexperiment.VirtualexperimentApplication - Started VirtualexperimentApplication in 5.009 seconds (JVM running for 5.591)
+2017-08-27 20:54:25.751 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-27 20:54:25.751 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-27 20:54:25.779 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2017-08-27 20:54:25.888 [http-nio-8080-exec-1] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2017-08-27 20:54:47.050 [http-nio-8080-exec-3] INFO  c.r.virtualexperiment.controller.IndexController - 访问了index方法
+2017-08-27 20:54:47.050 [http-nio-8080-exec-3] ERROR c.r.virtualexperiment.controller.IndexController - 记录error错误日志
+2017-08-27 22:01:31.355 [main] INFO  c.r.virtualexperiment.VirtualexperimentApplication - Starting VirtualexperimentApplication on zhangdeheng with PID 2828 (started by zdh in D:\学习\springboot_framework\springboot_------\virtualexperiment)
+2017-08-27 22:01:31.355 [main] INFO  c.r.virtualexperiment.VirtualexperimentApplication - No active profile set, falling back to default profiles: default
+2017-08-27 22:01:31.480 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Sun Aug 27 22:01:31 CST 2017]; root of context hierarchy
+2017-08-27 22:01:32.001 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-08-27 22:01:36.909 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-08-27 22:01:37.050 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-08-27 22:01:37.050 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-08-27 22:01:37.537 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-08-27 22:01:37.537 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6057 ms
+2017-08-27 22:01:38.099 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-08-27 22:01:38.099 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-27 22:01:38.115 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-27 22:01:38.115 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-27 22:01:38.115 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-27 22:01:38.115 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-27 22:01:38.115 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2017-08-27 22:01:39.102 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-08-27 22:01:40.025 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-08-27 22:01:40.197 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-08-27 22:01:40.574 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-08-27 22:01:40.574 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-08-27 22:01:40.574 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-08-27 22:01:40.715 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-08-27 22:01:41.480 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-08-27 22:01:42.893 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-08-27 22:01:45.979 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Sun Aug 27 22:01:31 CST 2017]; root of context hierarchy
+2017-08-27 22:01:46.292 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.rainierSoft.virtualexperiment.controller.IndexController.index()
+2017-08-27 22:01:46.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.rainierSoft.virtualexperiment.controller.IndexController.login_view()
+2017-08-27 22:01:46.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.rainierSoft.virtualexperiment.controller.LoginController.login(com.rainierSoft.virtualexperiment.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2017-08-27 22:01:46.401 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/upload],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.rainierSoft.virtualexperiment.controller.UploadController.index()
+2017-08-27 22:01:46.401 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/uploads],methods=[POST],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.rainierSoft.virtualexperiment.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2017-08-27 22:01:46.401 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/upload],methods=[POST],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.rainierSoft.virtualexperiment.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2017-08-27 22:01:46.511 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.rainierSoft.virtualexperiment.controller.UserController.delete(java.lang.Long)
+2017-08-27 22:01:46.511 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.util.List<com.rainierSoft.virtualexperiment.entity.UserEntity> com.rainierSoft.virtualexperiment.controller.UserController.list()
+2017-08-27 22:01:46.511 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public com.rainierSoft.virtualexperiment.entity.UserEntity com.rainierSoft.virtualexperiment.controller.UserController.save(com.rainierSoft.virtualexperiment.entity.UserEntity)
+2017-08-27 22:01:46.511 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/cutpage]}" onto public java.util.List<com.rainierSoft.virtualexperiment.entity.UserEntity> com.rainierSoft.virtualexperiment.controller.UserController.cutPage(int)
+2017-08-27 22:01:46.511 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/age]}" onto public java.util.List<com.rainierSoft.virtualexperiment.entity.UserEntity> com.rainierSoft.virtualexperiment.controller.UserController.age(int)
+2017-08-27 22:01:46.511 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-27 22:01:46.511 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-27 22:01:46.636 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/virtualexperiment/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 22:01:46.636 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 22:01:46.636 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 22:01:46.964 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 22:01:48.198 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-08-27 22:01:49.297 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-08-27 22:01:49.313 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-08-27 22:01:49.313 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-08-27 22:01:49.547 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-08-27 22:01:49.563 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-08-27 22:01:49.578 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-08-27 22:01:49.625 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-08-27 22:01:49.625 [main] INFO  c.r.virtualexperiment.VirtualexperimentApplication - Started VirtualexperimentApplication in 18.942 seconds (JVM running for 20.179)
+2017-08-27 22:02:03.941 [http-nio-8080-exec-5] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-27 22:02:03.942 [http-nio-8080-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-27 22:02:03.990 [http-nio-8080-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms
+2017-08-27 22:02:04.157 [http-nio-8080-exec-5] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2017-08-27 22:02:15.404 [http-nio-8080-exec-6] INFO  c.r.virtualexperiment.controller.IndexController - 访问了index方法
+2017-08-27 22:02:15.404 [http-nio-8080-exec-6] ERROR c.r.virtualexperiment.controller.IndexController - 记录error错误日志
+2017-08-27 23:04:04.251 [main] INFO  com.springboot.demo.VirtualexperimentApplication - Starting VirtualexperimentApplication on zhangdeheng with PID 13860 (started by zdh in D:\学习\springboot_framework\springboot_------\virtualexperiment)
+2017-08-27 23:04:04.267 [main] INFO  com.springboot.demo.VirtualexperimentApplication - No active profile set, falling back to default profiles: default
+2017-08-27 23:04:04.345 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Sun Aug 27 23:04:04 CST 2017]; root of context hierarchy
+2017-08-27 23:04:04.782 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-08-27 23:04:06.251 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-08-27 23:04:06.271 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-08-27 23:04:06.271 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-08-27 23:04:06.396 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-08-27 23:04:06.396 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2051 ms
+2017-08-27 23:04:06.583 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-08-27 23:04:06.583 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-27 23:04:06.599 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-27 23:04:06.599 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-27 23:04:06.599 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-27 23:04:06.599 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-27 23:04:06.599 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2017-08-27 23:04:06.880 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-08-27 23:04:07.139 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-08-27 23:04:07.155 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-08-27 23:04:07.202 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-08-27 23:04:07.202 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-08-27 23:04:07.202 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-08-27 23:04:07.233 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-08-27 23:04:07.420 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-08-27 23:04:07.827 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-08-27 23:04:08.514 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Sun Aug 27 23:04:04 CST 2017]; root of context hierarchy
+2017-08-27 23:04:08.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.springboot.demo.controller.IndexController.index()
+2017-08-27 23:04:08.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.springboot.demo.controller.IndexController.login_view()
+2017-08-27 23:04:08.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.springboot.demo.controller.LoginController.login(com.springboot.demo.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2017-08-27 23:04:08.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/upload],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.springboot.demo.controller.UploadController.index()
+2017-08-27 23:04:08.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/uploads],methods=[POST],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.springboot.demo.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2017-08-27 23:04:08.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/upload],methods=[POST],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.springboot.demo.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2017-08-27 23:04:08.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.springboot.demo.controller.UserController.delete(java.lang.Long)
+2017-08-27 23:04:08.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.util.List<com.springboot.demo.entity.UserEntity> com.springboot.demo.controller.UserController.list()
+2017-08-27 23:04:08.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public com.springboot.demo.entity.UserEntity com.springboot.demo.controller.UserController.save(com.springboot.demo.entity.UserEntity)
+2017-08-27 23:04:08.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/age]}" onto public java.util.List<com.springboot.demo.entity.UserEntity> com.springboot.demo.controller.UserController.age(int)
+2017-08-27 23:04:08.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/cutpage]}" onto public java.util.List<com.springboot.demo.entity.UserEntity> com.springboot.demo.controller.UserController.cutPage(int)
+2017-08-27 23:04:08.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-27 23:04:08.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-27 23:04:08.640 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/virtualexperiment/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 23:04:08.640 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 23:04:08.640 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 23:04:08.703 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 23:04:08.921 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-08-27 23:04:09.062 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-08-27 23:04:09.062 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-08-27 23:04:09.062 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-08-27 23:04:09.078 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-08-27 23:04:09.109 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-08-27 23:04:09.156 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-08-27 23:04:09.187 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-08-27 23:04:09.218 [main] INFO  com.springboot.demo.VirtualexperimentApplication - Started VirtualexperimentApplication in 5.194 seconds (JVM running for 5.743)
+2017-08-27 23:04:29.061 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-27 23:04:29.064 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-27 23:04:29.110 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms
+2017-08-27 23:04:29.186 [http-nio-8080-exec-1] INFO  com.springboot.demo.controller.IndexController - 访问了index方法
+2017-08-27 23:04:29.186 [http-nio-8080-exec-1] ERROR com.springboot.demo.controller.IndexController - 记录error错误日志
+2017-08-27 23:04:35.794 [http-nio-8080-exec-5] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2017-08-27 23:17:52.730 [main] INFO  com.springboot.demo.VirtualexperimentApplication - Starting VirtualexperimentApplication on zhangdeheng with PID 6760 (started by zdh in D:\学习\springboot_framework\springboot_demo)
+2017-08-27 23:17:52.730 [main] INFO  com.springboot.demo.VirtualexperimentApplication - No active profile set, falling back to default profiles: default
+2017-08-27 23:17:52.777 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Sun Aug 27 23:17:52 CST 2017]; root of context hierarchy
+2017-08-27 23:17:53.121 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-08-27 23:17:54.671 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-08-27 23:17:54.683 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-08-27 23:17:54.683 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-08-27 23:17:54.824 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-08-27 23:17:54.824 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2047 ms
+2017-08-27 23:17:55.012 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-08-27 23:17:55.012 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-27 23:17:55.012 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-27 23:17:55.012 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-27 23:17:55.012 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-27 23:17:55.012 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-27 23:17:55.012 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2017-08-27 23:17:55.262 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-08-27 23:17:55.503 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-08-27 23:17:55.535 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-08-27 23:17:55.597 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-08-27 23:17:55.597 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-08-27 23:17:55.597 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-08-27 23:17:55.628 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-08-27 23:17:55.800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-08-27 23:17:56.206 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-08-27 23:17:56.840 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Sun Aug 27 23:17:52 CST 2017]; root of context hierarchy
+2017-08-27 23:17:56.924 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.springboot.demo.controller.IndexController.index()
+2017-08-27 23:17:56.924 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.springboot.demo.controller.IndexController.login_view()
+2017-08-27 23:17:56.924 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.springboot.demo.controller.LoginController.login(com.springboot.demo.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2017-08-27 23:17:56.924 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/upload],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.springboot.demo.controller.UploadController.index()
+2017-08-27 23:17:56.924 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/uploads],methods=[POST],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.springboot.demo.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2017-08-27 23:17:56.924 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/upload],methods=[POST],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.springboot.demo.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2017-08-27 23:17:56.940 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.lang.String com.springboot.demo.controller.UserController.delete(java.lang.Long)
+2017-08-27 23:17:56.940 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public java.util.List<com.springboot.demo.entity.UserEntity> com.springboot.demo.controller.UserController.list()
+2017-08-27 23:17:56.940 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET],produces=[text/plain;charset=UTF-8]}" onto public com.springboot.demo.entity.UserEntity com.springboot.demo.controller.UserController.save(com.springboot.demo.entity.UserEntity)
+2017-08-27 23:17:56.940 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/cutpage]}" onto public java.util.List<com.springboot.demo.entity.UserEntity> com.springboot.demo.controller.UserController.cutPage(int)
+2017-08-27 23:17:56.940 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/age]}" onto public java.util.List<com.springboot.demo.entity.UserEntity> com.springboot.demo.controller.UserController.age(int)
+2017-08-27 23:17:56.940 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-27 23:17:56.940 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-27 23:17:56.971 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/virtualexperiment/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 23:17:56.971 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 23:17:56.971 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 23:17:57.002 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-27 23:17:57.237 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-08-27 23:17:57.377 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-08-27 23:17:57.377 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-08-27 23:17:57.377 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-08-27 23:17:57.393 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-08-27 23:17:57.409 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-08-27 23:17:57.424 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-08-27 23:17:57.440 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-08-27 23:17:57.440 [main] INFO  com.springboot.demo.VirtualexperimentApplication - Started VirtualexperimentApplication in 4.96 seconds (JVM running for 5.461)
+2017-08-27 23:19:10.141 [http-nio-8080-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-27 23:19:10.145 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-27 23:19:10.172 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2017-08-27 23:19:10.196 [http-nio-8080-exec-3] INFO  com.springboot.demo.controller.IndexController - 访问了index方法
+2017-08-27 23:19:10.196 [http-nio-8080-exec-3] ERROR com.springboot.demo.controller.IndexController - 记录error错误日志
+2017-08-27 23:19:15.443 [http-nio-8080-exec-4] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
