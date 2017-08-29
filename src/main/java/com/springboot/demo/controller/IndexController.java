@@ -17,9 +17,9 @@ public class IndexController {
      */
     @RequestMapping(value = "/login_view",method = RequestMethod.GET,produces= "text/plain;charset=UTF-8")
     public String login_view(){
-    	logger.debug("记录debug日志");
-        logger.info("访问了index方法");
-        logger.error("记录error错误日志");
+//    	logger.debug("记录debug日志");
+//        logger.info("访问了index方法");
+//        logger.error("记录error错误日志");
         return "login";
     }
     
