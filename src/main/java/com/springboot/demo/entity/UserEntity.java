@@ -7,8 +7,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Min;
 
 import com.springboot.demo.base.BaseEntity;
+import com.springboot.demo.validator.FlagValidator;
 /**
  * 
  * @author zdh
@@ -28,7 +30,7 @@ public class UserEntity extends BaseEntity implements Serializable
 
     @Column(name = "t_name")
     private String name;
-
+    @Min(value=1)
     @Column(name = "t_age")
     private int age;
 
@@ -37,6 +39,8 @@ public class UserEntity extends BaseEntity implements Serializable
     
     @Column(name = "t_pwd")
     private String pwd;
+    @FlagValidator(values="1,2,3")
+    private  String flag;
     
     public String getPwd() {
 		return pwd;
@@ -77,4 +81,12 @@ public class UserEntity extends BaseEntity implements Serializable
     public void setAddress(String address) {
         this.address = address;
     }
+
+	public String getFlag() {
+		return flag;
+	}
+
+	public void setFlag(String flag) {
+		this.flag = flag;
+	}
 }
